@@ -19,15 +19,15 @@ IHost host = Host.CreateDefaultBuilder().ConfigureServices(services =>
 
 IMediator mediator = new Mediator(host.Services);
 
-await mediator.Send(new CreatePerson()
-{
-    Person = new EntityFrameworkTest.Data.Entities.Person()
-    {
-        FamilyName = "ibr",
-        FirstName = " hamdeh",
-        Id = Guid.NewGuid(),
-    }
-});
+//await mediator.Send(new CreatePerson()
+//{
+//    Person = new EntityFrameworkTest.Data.Entities.Person()
+//    {
+//        FamilyName = "ibr",
+//        FirstName = " hamdeh",
+//        Id = Guid.NewGuid(),
+//    }
+//});
 
 host.Run();
 Console.WriteLine("******** Finished ********");

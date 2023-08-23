@@ -7,5 +7,6 @@ namespace EntityFrameworkTest.Data.Entities
         public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string FamilyName { get; set; }
+        public List<House> Houses { get; set; }
     }
 }
